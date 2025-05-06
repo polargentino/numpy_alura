@@ -50,3 +50,19 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
     Visualizar los datos con matplotlib.
 
     Reemplazar nan por algún valor
+
+
+## 📘 Explicación línea por línea:
+
+
+
+| Línea                 | Qué hace                                          | Por qué es útil                       |
+| --------------------- | ------------------------------------------------- | ------------------------------------- |
+| `import numpy as np`  | Importa NumPy con el alias `np`                   | Para poder usar sus funciones         |
+| `np.genfromtxt(...)`  | Carga un archivo `.csv` como matriz de NumPy      | Maneja bien valores faltantes (`NaN`) |
+| `delimiter=','`       | Define que las columnas están separadas por comas | Necesario para `.csv`                 |
+| `print(...)`          | Muestra en pantalla los datos y estructuras       | Para entender la forma de los datos   |
+| `datos.shape`         | Muestra cuántas filas y columnas hay              | Importante para análisis              |
+| `np.isnan(...).sum()` | Cuenta cuántos `NaN` hay                          | Detecta datos faltantes               |
+| `np.arange(...)`      | Crea un arreglo de ejemplo                        | Ayuda a practicar                     |
+
