@@ -71,7 +71,7 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 
 ## Captura del curso con nuestro gráfico generado en V.S.C
 
-![Captura Gráfico](assets/app_b-0.png)
+![Captura Gráfico](assets/app_b.png)
 
 ## Los siguientes Gráficos:
 
@@ -83,4 +83,4 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 
 ![Captura Gráfico](assets/app_b-4.png)
 
-![Captura Gráfico](assets/app_b-5.png)
+![Captura Gráfico](assets/github.png)
