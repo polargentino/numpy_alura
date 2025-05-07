@@ -67,3 +67,4 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 | `np.arange(...)`      | Crea un arreglo de ejemplo                        | Ayuda a practicar                     |
 
 ## 07/05/2025
+![Gráfico de manzanas.csv](assets/app_a.png)
