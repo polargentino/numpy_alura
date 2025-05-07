@@ -73,6 +73,8 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 
 ![Captura Gráfico](assets/app_b-0.png)
 
+## Los siguientes Gráficos:
+
 ![Captura Gráfico](assets/app_b-1.png)
 
 ![Captura Gráfico](assets/app_b-2.png)
@@ -81,4 +83,4 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 
 ![Captura Gráfico](assets/app_b-4.png)
 
-![assets/app_b-5.png](assets/app_b-5.png)
+![Captura Gráfico](assets/app_b-5.png)
