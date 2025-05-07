@@ -81,4 +81,4 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 
 ![Captura Gráfico](assets/app_b-4.png)
 
-![Captura Gráfico](assets/app_b-5.png)
+![assets/app_b-5.png](assets/app_b-5.png)
