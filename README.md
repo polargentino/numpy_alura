@@ -66,3 +66,4 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 | `np.isnan(...).sum()` | Cuenta cuántos `NaN` hay                          | Detecta datos faltantes               |
 | `np.arange(...)`      | Crea un arreglo de ejemplo                        | Ayuda a practicar                     |
 
+## 07/05/2025
