@@ -84,3 +84,35 @@ Es una estructura optimizada para cálculos numéricos, mucho más eficiente que
 ![Captura Gráfico](assets/app_b-4.png)
 
 ![Captura Gráfico](assets/github.png)
+
+# 08/005/2025
+09
+Haga lo que hicimos
+ Siguiente pregunta
+
+Ha llegado el momento de poner a prueba los conocimientos adquiridos durante la lección. Continuando con el proyecto de las naranjas/toronjas, ahora debes seleccionar parte de los datos. Las columnas que evaluaremos son el diámetro y el peso. Crea arrays específicos para almacenar el diámetro y el peso de la naranja y la toronja. El diámetro está en la columna cero y el peso en la columna uno. Los datos de las naranjas van hasta la fila 4999 y los datos de las toronjas comienzan en la fila 5000 del archivo.
+
+Después de seleccionar los datos, importa la biblioteca matplotlib y crea un gráfico para el peso en función del diámetro tanto para las naranjas como para las toronjas.
+
+Ver opinión del instructor
+Opinión del instructor
+
+Para llevar a cabo esta etapa, puedes seguir los siguientes pasos:
+
+Selección de datos:
+
+diametro_naranja = dato[:5000, 0]
+diametro_toronja = dato[5000:, 0]
+peso_naranja = dato[:5000, 1]
+peso_toronja = dato[5000:, 1]
+Copia el código
+Visualización:
+
+import matplotlib.pyplot as plt
+
+plt.plot(diametro_naranja, peso_naranja)
+plt.plot(diametro_toronja, peso_toronja)
+
+## wget https://gist.githubusercontent.com/ahcamachod/9be09de793dc3bf1e6c3d98eb4e5b1ef/raw/21b85572693200040e11284ef6dcfc3457ec8e11/citrus.csv
+
+![Captura Gráfico](assets/citrus-1.png)
