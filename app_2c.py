@@ -26,3 +26,16 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+'''
+
+Datos válidos cargados:
+Forma del array: (10000, 5)
+Primeras filas:
+ [[  2.96  86.76 172.    85.     2.  ]
+ [  3.91  88.05 166.    78.     3.  ]
+ [  4.42  95.17 156.    81.     2.  ]
+ [  4.47  95.6  163.    81.     4.  ]
+ [  4.48  95.76 161.    72.     9.  ]]
+                                        
+'''
