@@ -120,3 +120,6 @@ plt.plot(diametro_toronja, peso_toronja)
 
 # app_2d.py
 ![app_2d.py](assets/citrus-2.png)
+
+# app_2f.py
+![app_2f.py](assets/citrus_final_accurate.png)
