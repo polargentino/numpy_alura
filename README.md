@@ -115,7 +115,7 @@ plt.plot(diametro_toronja, peso_toronja)
 
 ## wget https://gist.githubusercontent.com/ahcamachod/9be09de793dc3bf1e6c3d98eb4e5b1ef/raw/21b85572693200040e11284ef6dcfc3457ec8e11/citrus.csv
 
-![Captura Gráfico](assets/citrus-1.png)
+![app_2c.py](assets/citrus-1.png)
 
 # app_2d.py
 ![app_2d.py](assets/citrus-2.png)
