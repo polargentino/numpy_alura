@@ -118,4 +118,4 @@ plt.plot(diametro_toronja, peso_toronja)
 ![Captura Gráfico](assets/citrus-1.png)
 
 # app_2d.py
-![app_2d.py](assets/app_b-2.png)
+![app_2d.py](assets/citrus-2.png)
