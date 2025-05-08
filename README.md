@@ -127,4 +127,8 @@ plt.plot(diametro_toronja, peso_toronja)
 # app_2g.py
 ![app_2g.py](assets/citrus-4.png)
 
+### El gráfico muestra claramente la relación entre el diámetro y el peso para las naranjas (puntos azules) y las toronjas (puntos naranjas).
 
+## Puedes observar cómo los puntos de las naranjas se agrupan en un rango de diámetros y pesos más bajos, mientras que los puntos de las toronjas se agrupan en rangos más altos. Además, hay una clara tendencia lineal: a medida que el diámetro aumenta, el peso también lo hace para ambos tipos de fruta.
+
+## Este gráfico visualiza de forma efectiva cómo estas dos características (diámetro y peso) permiten diferenciar entre naranjas y toronjas, lo cual es un paso fundamental en proyectos de clasificación de datos como este.
