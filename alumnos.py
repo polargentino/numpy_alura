@@ -139,5 +139,18 @@ min: La nota mínima es 2.5.
 max: La nota máxima es 10.0.
 
 
+para descargar el archivo alumnos.csv a la máquina linux: 
 
+(env) ┌──(env)─(pol㉿kali)-[~/Escritorio/numpy_alura]
+└─$ wget https://gist.githubusercontent.com/ahcamachod/807a2c1cf6c19108b2b701ea1791ab45/raw/fb84f8b2d8917a89de26679eccdbc8f9c1d2e933/alumnos.csv 
+--2025-05-13 15:12:23--  https://gist.githubusercontent.com/ahcamachod/807a2c1cf6c19108b2b701ea1791ab45/raw/fb84f8b2d8917a89de26679eccdbc8f9c1d2e933/alumnos.csv
+Resolviendo gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Conectando con gist.githubusercontent.com (gist.githubusercontent.com)[185.199.110.133]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 363 [text/plain]
+Grabando a: «alumnos.csv»
+
+alumnos.csv                    100%[=================================================>]     363  --.-KB/s    en 0s      
+
+2025-05-13 15:12:24 (2,39 MB/s) - «alumnos.csv» guardado [363/363]
 '''
