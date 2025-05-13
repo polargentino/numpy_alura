@@ -109,5 +109,24 @@ Primeras filas de Casas o Casas de Condominio:
 15  Casa de Condominio    Santa Fe             4        3       2   466  26250.0      9432.5       NaN
 41  Casa de Condominio    Santa Fe             5       10       5  1600  87500.0      5600.0       NaN
 96                Casa  Lindavista             1        0       0    33   4200.0         NaN       NaN
-                                                                                                        
+
+
+
+Explicación de Gemini:
+---------------------
+
+¡Excelente! Has comprendido muy bien cómo funciona el filtrado de datos utilizando condiciones 
+booleanas. Como puedes ver en la salida, al aplicar una condición, obtienes un sub-DataFrame que 
+contiene solo las filas que cumplen esa condición. Combinar condiciones con & (AND) y | (OR) te 
+permite realizar filtros más específicos.
+
+Ya hemos cargado los datos, explorado su estructura (.info(), .shape), visto estadísticas básicas 
+(.describe()) y aprendido a seleccionar y filtrar datos.
+
+Ahora, recordemos que al usar .info(), identificamos que las columnas Valor, Condominio e Impuesto 
+tienen valores faltantes (NaN). Trabajar con datos faltantes es un paso crucial en la limpieza de 
+datos, ya que pueden afectar los análisis posteriores.
+
+El siguiente paso es aprender a identificar y manejar estos valores faltantes. Pandas nos proporciona 
+herramientas muy útiles para esto.
 '''
