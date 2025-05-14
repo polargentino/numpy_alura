@@ -1,3 +1,6 @@
 *.csv
 .env
+# Ignorar archivos Excel
+*.xlsx
+*.xls
 
