@@ -3,7 +3,7 @@ import pandas as pd
 
 datos_seleccion = pd.read_csv('superstore_data.csv', usecols = [0,1,4])
 print(datos_seleccion)
-datos_seleccion.to_csv('clientes_mercado.csv')
+datos_seleccion.to_csv('clientes_mercado.csv', index=False)
 
 '''
          Id  Year_Birth   Income
