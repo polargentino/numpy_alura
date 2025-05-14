@@ -20,3 +20,8 @@ print(datos_co2)
 
 [63104 rows x 11 columns]
 '''
+print(pd.ExcelFile(archivo).sheet_names) # Para ver las hojas de Excel
+
+'''
+['emisiones_C02', 'emisiones_percapita', 'fuentes']
+'''
