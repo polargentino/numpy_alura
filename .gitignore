@@ -3,4 +3,7 @@
 # Ignorar archivos Excel
 *.xlsx
 *.xls
+# Ignorar archivos JSON
+*.json
+
 
