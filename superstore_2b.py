@@ -4,7 +4,7 @@ import pandas as pd
 clientes_mercado = pd.read_csv('clientes_mercado.csv')
 print(clientes_mercado)
 '''
-Sin especificar index=False: 
+Sin especificar index=False: aparecen 4 columns
 
       Unnamed: 0     Id  Year_Birth   Income
 0              0   1826        1970  84835.0
@@ -22,7 +22,7 @@ Sin especificar index=False:
 [2240 rows x 4 columns]
 
 
-datos_seleccion.to_csv('clientes_mercado.csv', index=False)
+datos_seleccion.to_csv('clientes_mercado.csv', index=False) Correcto!
 
          Id  Year_Birth   Income
 0      1826        1970  84835.0
