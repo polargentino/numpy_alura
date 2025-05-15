@@ -5,5 +5,5 @@
 *.xls
 # Ignorar archivos JSON
 *.json
-
+*.html
 
