@@ -65,3 +65,26 @@ def analizar_datos_poblacion(archivo_html, archivo_salida):
 # Ejemplo de uso
 analizar_datos_poblacion('habitantes.html', 'graficos_poblacion.html')
 
+'''
+Explicación del Código:
+Importar mpld3:
+
+import mpld3: Importa la biblioteca mpld3 para convertir los gráficos en formato HTML.
+Crear figuras para los gráficos:
+
+fig1, ax1 = plt.subplots(figsize=(12, 8)): Crea una figura y un eje para el primer gráfico.
+fig2, ax2 = plt.subplots(figsize=(12, 8)): Crea una figura y un eje para el segundo gráfico.
+Guardar los gráficos en un archivo HTML:
+
+mpld3.fig_to_html(fig1): Convierte la figura del primer gráfico a formato HTML.
+mpld3.fig_to_html(fig2): Convierte la figura del segundo gráfico a formato HTML.
+with open(archivo_salida, 'w') as f:: Abre un archivo HTML en modo escritura y guarda los gráficos en él.
+
+Explicación de los Cambios:
+Uso de tick_params:
+
+ax1.tick_params(axis='x', rotation=45): Utiliza tick_params para rotar las etiquetas del eje x, lo cual es más adecuado para evitar las advertencias.
+Advertencias de Deprecación:
+
+Las advertencias de deprecación relacionadas con matplotlib son internas de la biblioteca mpld3 y no afectan directamente el código. Estas advertencias son informativas y no deberían afectar la funcionalidad de tu código.
+'''

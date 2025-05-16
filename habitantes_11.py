@@ -49,3 +49,19 @@ def analizar_datos_poblacion(archivo_html, archivo_salida):
 
 # Ejemplo de uso
 analizar_datos_poblacion('habitantes.html', 'graficos_poblacion.html')
+
+'''
+Explicación del Código:
+Importar plotly.express:
+
+import plotly.express as px: Importa la biblioteca plotly.express para crear gráficos interactivos.
+Crear gráficos con Plotly:
+
+fig1 = px.bar(...): Crea un gráfico de barras para los 10 países con mayor población.
+fig2 = px.bar(...): Crea un gráfico de barras para los 10 países con mayor porcentaje del total mundial.
+Guardar los gráficos en un archivo HTML:
+
+fig1.write_html(archivo_salida): Guarda el primer gráfico en un archivo HTML.
+fig2.write_html(archivo_salida.replace('.html', '_porcentaje.html')): Guarda el segundo gráfico en otro archivo HTML.
+Este código te permitirá crear gráficos interactivos y guardarlos en archivos HTML sin las advertencias de deprecación. Si tienes más preguntas o necesitas más ayuda, no dudes en decírmelo.
+'''
