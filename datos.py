@@ -62,3 +62,27 @@ evaluacion_general experiencia_local max_hospedes  ... cuota_deposito cuota_limp
 
 [5 rows x 13 columns]
 '''
+print(datos.info())
+'''
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3818 entries, 0 to 3817
+Data columns (total 13 columns):
+ #   Column                Non-Null Count  Dtype 
+---  ------                --------------  ----- 
+ 0   evaluacion_general    3818 non-null   object
+ 1   experiencia_local     3818 non-null   object
+ 2   max_hospedes          3818 non-null   object
+ 3   descripcion_local     3818 non-null   object
+ 4   descripcion_vecindad  3818 non-null   object
+ 5   cantidad_baños        3818 non-null   object
+ 6   cantidad_cuartos      3818 non-null   object
+ 7   cantidad_camas        3818 non-null   object
+ 8   modelo_cama           3818 non-null   object
+ 9   comodidades           3818 non-null   object
+ 10  cuota_deposito        3818 non-null   object
+ 11  cuota_limpieza        3818 non-null   object
+ 12  precio                3818 non-null   object
+dtypes: object(13)
+memory usage: 387.9+ KB
+None
+'''
