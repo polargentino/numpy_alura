@@ -343,3 +343,11 @@ plt.xlabel('Cantidad de Baños')
 plt.ylabel('Frecuencia')
 plt.title('Distribución de Cantidad de Baños')
 plt.show()
+'''
+Explicación del Código de Visualización:
+plt.hist(): Crea un histograma de los datos.
+plt.xlabel() y plt.ylabel(): Establecen las etiquetas de los ejes x e y.
+plt.title(): Establece el título del gráfico.
+plt.show(): Muestra el gráfico.
+
+'''
