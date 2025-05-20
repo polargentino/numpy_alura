@@ -86,3 +86,19 @@ dtypes: object(13)
 memory usage: 387.9+ KB
 None
 '''
+print(datos['precio'])
+'''
+None
+0       $110.00
+1        $45.00
+2        $55.00
+3        $52.00
+4        $85.00
+         ...   
+3813    $299.00
+3814    $199.00
+3815    $400.00
+3816    $250.00
+3817    $350.00
+Name: precio, Length: 3818, dtype: object
+'''
