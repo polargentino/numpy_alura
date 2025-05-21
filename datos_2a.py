@@ -1,4 +1,5 @@
 import datetime
+import pandas as pd
 
 # creando un objeto datetime con la fecha y hora actual
 ahora = datetime.datetime.now()
@@ -26,4 +27,33 @@ print("Diferencia entre las dos fechas:", diferencia)
 
 '''
 Diferencia entre las dos fechas: 365 days, 0:00:00
+'''
+# Creando el DataFrame con las informaciones
+datos = pd.DataFrame({
+    'Fecha de venta': ['01/01/2022', '05/02/2022', '10/03/2022', '15/04/2022','18/04/2022','20/04/2022'],
+    'valor': [100, 150, 200, 250,80,180]
+})
+
+# Mostrando el DataFrame
+print(datos)
+'''
+ Fecha de venta  valor
+0     01/01/2022    100
+1     05/02/2022    150
+2     10/03/2022    200
+3     15/04/2022    250
+4     18/04/2022     80
+5     20/04/2022    180
+                       
+'''
+datos['Fecha de venta'] = pd.to_datetime(datos['Fecha de venta'], format='%d/%m/%Y')
+print(datos['Fecha de venta'])
+'''
+0   2022-01-01
+1   2022-02-05
+2   2022-03-10
+3   2022-04-15
+4   2022-04-18
+5   2022-04-20
+Name: Fecha de venta, dtype: datetime64[ns]
 '''
