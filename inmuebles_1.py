@@ -90,7 +90,7 @@ Tipo de dato de la columna 'precio': float64
 
 
 
-Explicación del Código:
+Explicación del Código: Gemini
 Importar librerías:
 
 pandas se importa como pd para la manipulación de DataFrames.
@@ -100,12 +100,23 @@ Cargar datos:
 pd.read_json('inmuebles_disponibles.json') carga tus datos en un DataFrame llamado df_data.
 Tratamiento de la columna precio:
 
-df_data['precio'].fillna('0.0', inplace=True): Esta línea busca todos los valores nulos (NaN) en la columna precio y los reemplaza por la cadena de texto '0.0'. El argumento inplace=True asegura que la modificación se haga directamente sobre df_data sin necesidad de reasignarlo.
-df_data['precio'] = df_data['precio'].apply(lambda x: x.replace('$', '').replace(',', '')): Aquí se aplica una función a cada elemento de la columna precio.
+df_data['precio'].fillna('0.0', inplace=True): Esta línea busca todos los valores nulos (NaN) en la 
+columna precio y los reemplaza por la cadena de texto '0.0'. El argumento inplace=True asegura que 
+la modificación se haga directamente sobre df_data sin necesidad de reasignarlo.
+
+df_data['precio'] = df_data['precio'].apply(lambda x: x.replace('$', '').replace(',', '')): Aquí se 
+aplica una función a cada elemento de la columna precio.
+
 apply(lambda x: ...): Permite aplicar una función personalizada.
-lambda x: x.replace('$', '').replace(',', ''): Es una función anónima que toma un valor x (cada precio como string) y le quita el símbolo $ y las comas ,.
-df_data['precio'] = df_data['precio'].astype(np.float64): Finalmente, esta línea convierte todos los valores de la columna precio (que ahora son strings de números, por ejemplo, '1500.50' o '0.0') al tipo numérico float64.
+lambda x: x.replace('$', '').replace(',', ''): Es una función anónima que toma un valor x 
+(cada precio como string) y le quita el símbolo $ y las comas ,.
+
+df_data['precio'] = df_data['precio'].astype(np.float64): Finalmente, esta línea convierte todos los 
+valores de la columna precio (que ahora son strings de números, por ejemplo, '1500.50' o '0.0') al 
+tipo numérico float64.
 Verificación:
 
-Las sentencias print() te permiten ver las primeras filas (head()) y la información general del DataFrame (info()) antes y después de las transformaciones para confirmar que los cambios se aplicaron correctamente, especialmente el tipo de dato de la columna precio.
+Las sentencias print() te permiten ver las primeras filas (head()) y la información general del 
+DataFrame (info()) antes y después de las transformaciones para confirmar que los cambios se 
+aplicaron correctamente, especialmente el tipo de dato de la columna precio.
 '''
