@@ -194,3 +194,22 @@ plt.show()
 
 print(plt.style.available)
 
+
+sudamerica = df.query('Region == "América del Sur"')
+print(sudamerica.head(10))
+
+colores = ['royalblue','orange','forestgreen','orchid',
+           'purple','brown','slateblue','gray','olive',
+           'navy','teal','tomato']
+
+fig, ax = plt.subplots(figsize=(10,3))
+
+ax.bar(sudamerica.index, sudamerica['Total'], color=colores)
+ax.set_title('Inmigración de sudamericanos hacia Canadá\ndurante el periodo de 1980 a 2013', fontsize=18, loc='left')
+ax.set_xlabel('Paises')
+ax.set_ylabel('Número de Inmigrantes', fontsize=14)
+
+ax.xaxis.set_tick_params(labelsize=12)
+ax.yaxis.set_tick_params(labelsize=12)
+ax.grid(linestyle='--')
+plt.show()
