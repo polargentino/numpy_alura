@@ -130,3 +130,67 @@ for ax in axs.flat:
 
 plt.show()
 
+# Desafío: visualizando datos de ventas de tiendas diferentes
+tiendas = ['A', 'B', 'C', 'D']
+ventas_2022 = {'Ene': [100, 80, 150, 50],
+    'Feb': [120, 90, 170, 60],
+    'Mar': [150, 100, 200, 80],
+    'Abr': [180, 110, 230, 90],
+    'May': [220, 190, 350, 200],
+    'Jun': [230, 150, 280, 120],
+    'Jul': [250, 170, 300, 140],
+    'Ago': [260, 180, 310, 150],
+    'Sep': [240, 160, 290, 130],
+    'Oct': [220, 140, 270, 110],
+    'Nov': [400, 220, 350, 190],
+    'Dec': [300, 350, 400, 250]}
+
+df = pd.DataFrame(ventas_2022, index=tiendas)
+print(df.tail())
+
+# Crear la figura y los subgráficos
+
+fig, axs = plt.subplots(2, 2, figsize=(14, 8))
+
+# Ajustar los espaciados entre los subgráficos
+
+plt.subplots_adjust(wspace=0.3, hspace=0.4)
+
+# Agregar un título general para los subgráficos
+
+fig.suptitle('Ventas en el período de enero a diciembre de 2022 en las tiendas A, B, C y D')
+
+# Agregar los gráficos en cada uno de los subgráficos
+
+axs[0, 0].plot(df.loc['A'])
+axs[0, 0].set_title('Ventas en la tienda A')
+axs[0, 1].plot(df.loc['B'])
+axs[0, 1].set_title('Ventas en la tienda B')
+axs[1, 0].plot(df.loc['C'])
+axs[1, 0].set_title('Ventas en la tienda C')
+axs[1, 1].plot(df.loc['D'])
+axs[1, 1].set_title('Ventas en la tienda D')
+
+# Agregar etiquetas para los ejes X y Y
+
+for ax in axs.flat:
+    ax.set_xlabel('Mes')
+    ax.set_ylabel('Número de ventas')
+    ax.grid()
+# Mostrar la figura
+
+plt.show()
+
+fig, ax = plt.subplots(figsize=(8,3))
+ax.plot(datos_col['Año'],datos_col['Inmigrantes'], lw=2, marker='o')
+ax.xaxis.set_major_locator(plt.MultipleLocator(5))
+ax.set_title('Inmigrantes de Colombia hacia Canadá\n1980 - 2013\nPor Pol Monsalvo con Alura Latam', fontsize=18, loc='left')
+ax.set_xlabel('Año', fontsize=14)
+ax.set_ylabel('Número de Inmigrantes', fontsize=14)
+ax.xaxis.set_tick_params(labelsize=12)
+ax.yaxis.set_tick_params(labelsize=12)
+ax.grid()
+plt.show()
+
+print(plt.style.available)
+
