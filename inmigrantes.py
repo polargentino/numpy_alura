@@ -100,3 +100,33 @@ for ax in axs.flat:
 
 plt.show()
 
+fig, axs = plt.subplots(2, 2, figsize=(10, 6))
+fig.subplots_adjust(hspace=0.5, wspace=0.3)
+fig.suptitle('Inmigración de los 4 mayores países sudamericanos\nhacia Canadá desde 1980 - 2013')
+
+axs[0,0].plot(df.loc['Colombia', años])
+axs[0,0].set_title('Colombia')
+
+axs[0,1].plot(df.loc['Brasil', años])
+axs[0,1].set_title('Brasil')
+
+axs[1,0].plot(df.loc['Argentina', años])
+axs[1,0].set_title('Argentina')
+
+axs[1,1].plot(df.loc['Perú', años])
+axs[1,1].set_title('Perú')
+
+ymin = 0
+ymax = 7000
+for ax in axs.ravel():
+    ax.set_ylim(ymin, ymax)
+
+for ax in axs.flat:
+    ax.xaxis.set_major_locator(plt.MultipleLocator(5))
+    
+    ax.set_xlabel=('Año')
+    ax.set_ylabel=('Número de Inmigrantes')
+    ax.grid()
+
+plt.show()
+
