@@ -75,3 +75,28 @@ axs[1].set_ylabel('Número de Inmigrantes')
 axs[1].grid()
 
 plt.show()
+
+
+fig, axs = plt.subplots(2, 2, figsize=(10, 6))
+fig.subplots_adjust(hspace=0.5, wspace=0.3)
+
+axs[0,0].plot(df.loc['Colombia', años])
+axs[0,0].set_title('Colombia')
+
+axs[0,1].plot(df.loc['Brasil', años])
+axs[0,1].set_title('Brasil')
+
+axs[1,0].plot(df.loc['Argentina', años])
+axs[1,0].set_title('Argentina')
+
+axs[1,1].plot(df.loc['Perú', años])
+axs[1,1].set_title('Perú')
+
+for ax in axs.flat:
+    ax.xaxis.set_major_locator(plt.MultipleLocator(5))
+    
+    ax.set_xlabel=('Año')
+    ax.set_ylabel=('Número de Inmigrantes')
+
+plt.show()
+
